@@ -1,0 +1,15 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+  "name": "UNIPDS - Fundamentos de Machine Learning",
+  "runArgs": [
+    "--name",
+    "fundamentos-ml",
+    "--hostname",
+    "fundamentos-ml"
+  ],
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node"
+}
