@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if git diff --cached --name-only | grep -E '(^|/)node_modules/' > /dev/null; then
+  echo "Erro: commit bloqueado. Há arquivos em node_modules no stage."
+  echo "Remova-os do índice com: git rm -r --cached <caminho>/node_modules"
+  exit 1
+fi
