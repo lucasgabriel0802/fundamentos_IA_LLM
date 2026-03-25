@@ -1,0 +1,11 @@
+<!--
+    Template de item de compra passada.
+    A `UserView` injeta dados e usa `data-product` para remover itens depois.
+-->
+<div class="col-md-6 mb-2">
+  <div class="past-purchase" data-product="{{product}}">
+    <strong>{{name}}</strong> - Price {{price}} - Color {{color}}
+    <!-- Ícone clicável para remover compra -->
+    <i class="bi bi-x-circle text-danger float-end" title="Remove purchase"></i>
+  </div>
+</div>
